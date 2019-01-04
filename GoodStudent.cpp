@@ -21,3 +21,12 @@ GoodStudent::GoodStudent(const GoodStudent &obj) : Student(obj) {
     a = obj.a;
     b = obj.b;
 }
+
+void GoodStudent::sayHello() {
+    Student::sayHello();
+    std::cout << "GoodStudent hello extends" << std::endl;
+}
+
+void GoodStudent::testAbstract() {
+    std::cout << "testAbstract";
+}

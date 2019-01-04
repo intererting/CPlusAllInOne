@@ -21,6 +21,10 @@ public:
 
     GoodStudent(const GoodStudent &obj);
 
+    void sayHello() override;
+
+    void testAbstract() override;
+
 };
 
 

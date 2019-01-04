@@ -17,3 +17,7 @@ void Student::printValue() {
 Student::Student(int valueC) : c(valueC) {
 
 }
+
+void Student::sayHello() {
+    std::cout << "student hello c extends" << std::endl;
+}

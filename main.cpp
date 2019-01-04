@@ -1,6 +1,8 @@
 #include <iostream>
 #include <ctime>
 #include "GoodStudent.h"
+#include "Student.h"
+#include <fstream>
 
 using namespace std;
 
@@ -10,6 +12,12 @@ using namespace std;
 //};
 
 //void printStudent(Student *student);
+
+
+template<typename F, typename T>
+inline F toIntValue(T a) {
+    return atoi(a.c_str());
+}
 
 int main() {
 //    cout << "Hello, World!" << endl;
@@ -48,16 +56,56 @@ int main() {
 
 //    printStudent(&student);
 
-    GoodStudent student(1);
-    student.a = 1;
-    student.b = 1;
-    GoodStudent copyStudent = student;
-    copyStudent.printValue();
+//    GoodStudent student(1);
+//    student.a = 1;
+//    student.b = 1;
+//    GoodStudent copyStudent = student;
+//    copyStudent.printValue();
+
+//    getCValue(student);
+
+//    student.sayHello();
+
+//测试文件
+//    ofstream writer;
+//    writer.open("d:\\test.txt", ios::out);
+//    writer.close();
+
+//    ifstream reader;
+//    reader.open("d:\\test.txt", ios::out);
+//    string a;
+//    reader >> a;
+//    cout << a;
+//    reader.close();
+    string a = "33";
+    cout << toIntValue<int, string>(a);
 
     return 0;
 }
 
+//class MyException : public std::exception {
+//public:
+//    const char *what() const noexcept override {
+//        return exception::what();
+//    }
+//};
+
+//void getCValue(Student student) {
+//    cout << student.c << endl;
+//
+//}
+
 //void printStudent(Student *student) {
 //    cout << student->name;
 //}
+
+//class TestFather {
+//    void mPrint(int a) {
+//        this->mPrint((double) a);
+//    }
+//
+//    void mPrint(double a) {
+//
+//    }
+//};
 

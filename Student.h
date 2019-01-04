@@ -13,6 +13,12 @@ public:
     int a;
     int b;
 
+//    friend void getCValue(Student student);
+
+    virtual void testAbstract() = 0;
+
+    virtual void sayHello();
+
 private:
     int c;
 
